@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chart</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/0355850d71.js"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- Begin:date -->
+		<div class="row">
+			<div class="col-12">
+				<div class="date"></div>
+			</div>
+		</div>
+		<!-- End:date -->
+		<div class="row">
+
+			<div class="col-2">
+				<div class="info-sensor text-center bg-blue">
+					<p class="title">Nhiệt độ đất</p>
+					<p class="temperature">36.44 <span class="init">oC</span></p>
+					<div class="more">
+						<span class="float-left">0 oC</span>
+						<span class="float-right">0 oC</span>
+					</div>
+					<div class="scope">
+						Scope = 0
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<div class="info-sensor text-center bg-yellow">
+					<p class="title">Độ ẩm đất</p>
+					<p class="temperature">30.75 <span class="init">%</span></p>
+					<div class="more">
+						<span class="float-left">0 %</span>
+						<span class="float-right">0 %</span>
+					</div>
+					<div class="scope">
+						Scope = 0
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<div class="info-sensor text-center bg-blue">
+					<p class="title">Nhiệt độ không khí</p>
+					<p class="temperature">36.44 <span class="init">oC</span></p>
+					<div class="more">
+						<span class="float-left">0 oC</span>
+						<span class="float-right">0 oC</span>
+					</div>
+					<div class="scope">
+						Scope = 0
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<div class="info-sensor text-center bg-yellow">
+					<p class="title">Độ ẩm không khí</p>
+					<p class="temperature">30.75 <span class="init">%</span></p>
+					<div class="more">
+						<span class="float-left">0 %</span>
+						<span class="float-right">0 %</span>
+					</div>
+					<div class="scope">
+						Scope = 0
+					</div>
+				</div>
+			</div>
+
+			<div class="col-2">
+				<div class="plus-sersor">
+					<span>
+						<i class="fas fa-plus"></i>
+					</span>
+				</div>
+			</div>
+
+		</div>
+		<!-- Begin:chart -->
+		<div class="row mt-4">
+			<div class="col-6">
+				<div class="date-info">
+					<div class="date-select float-left">
+						<i class="fas fa-angle-left date-pre"></i>
+						<span>Hiện tại</span>
+						<i class="fas fa-angle-right date-next"></i>
+					</div>
+					<div class="date-type float-right">
+						<div class="btn-group">
+							<button class="btn btn-sm btn-primary">Ngày</button>
+							<button class="btn btn-sm btn-primary">Tháng</button>
+							<button class="btn btn-sm btn-primary">Năm</button>
+						</div>
+					</div>
+				</div>
+				<canvas id="line-chart" width="800" height="450">
+				</canvas>
+			</div>
+			<div class="col-6">
+				<div class="date-info">
+					<div class="date-select float-left">
+						<i class="fas fa-angle-left date-pre"></i>
+						<span>Hiện tại</span>
+						<i class="fas fa-angle-right date-next"></i>
+					</div>
+					<div class="date-type float-right">
+						<div class="btn-group">
+							<button class="btn btn-sm btn-primary">Ngày</button>
+							<button class="btn btn-sm btn-primary">Tháng</button>
+							<button class="btn btn-sm btn-primary">Năm</button>
+						</div>
+					</div>
+				</div>
+				<canvas id="bar-chart" width="800" height="450">
+				</canvas>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-6">
+				<div class="card">
+					<div class="card-header">
+						Control
+					</div>
+					<div class="card-body">
+						<table class="devices">
+							<tr>
+								<td class="name-device">Den</td>
+								<td class="remote-device">
+									<button>Turn on</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="name-device">Bom</td>
+								<td class="remote-device">
+									<button>Turn on</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End:chart -->
+	</div>
+
+	
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/create-chart.js"></script>
+<script type="text/javascript" src="lib/Chart.min.js"></script>
+
+
+</body>
+</html>

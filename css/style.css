@@ -1,0 +1,96 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*CSS date*/
+.date {
+	font-size: 14px;
+}
+/*CSS info sensor*/
+.info-sensor {
+	border-radius: 5px;
+	padding-top: 10px;
+}
+.info-sensor .title {
+	font-size: 13px;
+	margin: 0px;
+}
+.info-sensor .temperature {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0px;
+}
+.info-sensor .temperature .init {
+    font-size: 15px;
+	font-weight: normal;
+}
+.info-sensor .more {
+	display: block;
+    padding: 0px 14px;
+    font-size: 14px;
+}
+.info-sensor .scope {
+	font-size: 13px;
+    margin-top: 14px;
+}
+/*CSS botton add sensor*/
+.plus-sersor {
+    width: 170px;
+    height: 102px;
+    background-color: #cec5c5;
+    padding: 20px 64px;
+    border-radius: 5px;
+    font-size: 45px;
+    color: #2d2727;
+    cursor: pointer;
+}
+/*CSS color background*/
+.bg-blue {
+	background-color: #29a7a2;
+}
+
+.bg-yellow {
+	background-color: #f9de36;
+}
+
+/*CSS date-info*/
+.date-info {
+	padding: 0 10px 0 30px;
+}
+.date-info .date-select {
+
+}
+.date-info .date-select .date-pre {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.date-info .date-select .date-next {
+    margin-left: 5px;
+    cursor: pointer;
+}
+.date-info .date-type {
+
+}
+.date-info .date-type button {
+    border-radius: 0px;
+    border: 1px solid white;
+}
+
+/*CSS devices*/
+.devices {
+    table-layout: fixed;
+    width: 100%;
+}
+.devices .name-device {
+    width: 80%;
+}
+.devices tr {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 5px;
+}
+.devices td.remote-device {
+    border-left: 1px solid gray;
+    padding-left: 5px;
+}
